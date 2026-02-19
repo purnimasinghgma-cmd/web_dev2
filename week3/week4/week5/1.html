@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local stroage</title>
+    
+</head>
+<body>
+    <h1>all about you need to know about Ls </h1>
+</body>
+</html>
+<script>
+    // //  1. write/save/set in Ls
+
+    // localstroage.setitem("name","love")
+    // localStorage.setItem("id",23);
+    // localStorage.setItem("status",true)
+
+    // // 2. read/get/access
+
+    // const nm = localStorage.getItem("name");
+    // console.log(nm);
+
+    // // 3. removeItem
+    // localstroage.removeItem("status")
+
+    // // 4. clear --> delect all data present in Ls
+    // localStorage.clear()
+
+    localStorage.setItem ("hobby",JSON.stringify([1,2,3]))
+
+    let hb = JSON.parse(localStorage.getItem("hobby"));
+    console.log(hb[1],typeof hb);
+
+    localStorage.setItem("obj",JSON.stringify({a:1}))
+
+
+</script>

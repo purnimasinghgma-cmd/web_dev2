@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event object</title>
+</head>
+<body>
+    <button>Greet</button>
+</body>
+</html>
+
+<script>
+    const el = document.querySelector("button");
+    
+    el.addEventListener("click",greet);
+
+    function greet(event){
+        console.log(event);
+        console.log(event.targe);
+        console.log(event.targe.innerText);
+        console.log(event.type);
+
+        alert("Hellow From Dom")
+
+    }
+
+
+// when we are attaching using  addEventListener method one event object is created by the javascrept if you want to axase the event oject we can axes  by passing any variable in the event handler parameter  
+
+
+</script>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From in js</title>
+</head>
+<body>
+    <form>
+        <input type = "text"  id="nm" placeholder="enter your name">
+        <input type = "text" name="" id ="em" placeholder=" enter your email">
+        <input type = "submit" value="submit">
+<!-- <button>submit</buuton> -->
+    </form>
+</body>
+</html>
+
+<script>
+document.querySelector("form").addEventListener("submit",getData);
+
+function getData(e){
+    e.preventDefault();
+    let name = document.querySelector("#nm").value;
+    let email = document.querySelector("#em").value;
+    console.log(name, email);
+}
+</script>
+<!-- 1.wrap all input tag inside from tag
+ 2.use input ype submit for making a button
+ 3.always select from and apply event
+ 4.always apply submit event
+ 5.use e.preventDefault() to stop default behavior of form submission -->
