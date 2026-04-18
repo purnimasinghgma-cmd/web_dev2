@@ -1,0 +1,60 @@
+import counter from "./components/counter";
+
+function App() {
+    return (
+        <div>
+         <h1> Hellow fellow developer's </h1>
+         <counter />
+        </div>
+
+    );
+}
+export default App;
+
+
+
+
+// counter .jsx
+import { useState } from "react";
+function counter(){
+    const [count, setcount] = useState(0);
+    const handleAdd = ()=> {
+        return setcount(count +1);
+
+    };
+    const handleReduce = ()=> {
+        return setcount(count -1);
+    };
+    const handleReset = ()=> {
+        return setcount(0);
+    };
+    return(
+        <div>
+            <h1>count: {count} </h1>
+            <button onClick={handleAdd}>Add</button>
+            <button onClick={handleReduce} disabled={count<1}>Reduce</button>
+            <button onClick={handleReset} >Reset</button>
+        </div>
+    );
+
+    
+
+}
+export default counter;
+
+
+
+
+// app.jsx
+import counter from "./components/counter";
+
+function App() {
+    return (
+        <div>
+         <h1> Hellow fellow developer's </h1>
+         <counter />
+        </div>
+
+    );
+}
+export default App;

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>KRMU Profile</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f2f2f2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+/* Card */
+.profile-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+    width:420px;
+    text-align:center;
+}
+
+/* 🔹 Profile Heading */
+.profile-title{
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:15px;
+    color:#333;
+}
+
+/* Profile Picture */
+.profile-pic{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    border:4px solid #5A95D1;
+    margin:auto;
+    background:#ddd;
+}
+
+/* Name */
+.name{
+    font-size:28px;
+    font-weight:bold;
+    margin-top:15px;
+}
+
+/* Username */
+.username{
+    color:gray;
+    margin-top:5px;
+}
+
+/* Roll No + Programme */
+.info{
+    margin-top:10px;
+    font-size:16px;
+    color:#555;
+}
+
+/* Posts Count */
+.posts{
+    margin-top:25px;
+}
+
+.post-number{
+    font-size:40px;
+    font-weight:bold;
+    color:#5A95D1;
+}
+
+.post-text{
+    font-size:18px;
+    color:#555;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="profile-card">
+
+    <!-- 🔹 Profile Text -->
+    <div class="profile-title">Profile</div>
+
+
+    <!-- Profile Picture -->
+    <div class="profile-pic"></div>
+
+    <!-- Profile -->
+    <div class="profile">
+    <div class="edit" onclick="editProfile()">✏️</div>
+    </div>
+
+
+    <!-- Name -->
+    <div class="name">KRMU Talks</div>
+
+    <!-- Username -->
+    <div class="username">@krmu_talks</div>
+
+    <!-- Roll No + Programme -->
+     <div class="info">Name: xyz</div>
+    <div class="info">Roll No: 2501730728</div>
+    <div class="info">Programme: B.Tech AI & ML</div>
+
+    <!-- BIG Posts Count -->
+    <div class="posts">
+        <div class="post-number" id="postCount">245</div>
+        <div class="post-text">Posts</div>
+    </div>
+
+</div>
+
+<script>
+let posts = 245;
+document.getElementById("postCount").innerText = posts;
+
+function goBack(){
+    alert("Back clicked");
+}
+
+function editProfile(){
+    alert("Edit profile");
+}
+
+</script>
+
+</body>
+</html>
